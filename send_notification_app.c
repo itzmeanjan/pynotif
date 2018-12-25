@@ -19,4 +19,4 @@ int main(int argc, char **argv)
 	return 0;
 }
 
-// Compile this file using :: `gcc -I /usr/include/glib-2.0/ -I /usr/include/gdk-pixbuf-2.0/ -I /usr/lib64/glib-2.0/include/ send_notification_app.c -lvlc -lnotify`
+// Compile this file using :: `gcc -I /usr/include/glib-2.0/ -I /usr/include/gdk-pixbuf-2.0/ -I /usr/lib64/glib-2.0/include/ -o send_notification_app send_notification_app.c -lvlc -lnotify`
