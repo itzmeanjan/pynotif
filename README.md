@@ -4,21 +4,21 @@ A very simple to use Python API for accessing native notification service on Lin
 ## Example Usage ::
 
   #### pynotif.notification.send :
-    ```
-      from pynotif.notification import send
-      print(send('your_app_name', 'summary_of_notification', 'body_of_notification', 2, 1)) 
-      '''
-        Here for expires parameter, I'm using 2. After 2 seconds it'll get removed from desktop visibility zone.
+  ```
+     from pynotif.notification import send
+     print(send('your_app_name', 'summary_of_notification', 'body_of_notification', 2, 1)) 
+     '''
+       Here for expires parameter, I'm using 2. After 2 seconds it'll get removed from desktop visibility zone.
         
-        Urgency of notification is set to 1, which is default urgency value.
+       Urgency of notification is set to 1, which is default urgency value.
         
-        In default case, I've added a notification sound file, *.wav, in repo, which will be played after displaying notification.
+       In default case, I've added a notification sound file, *.wav, in repo, which will be played after displaying notification.
         
-        You can also set path to a image file, which can be used as a icon for notification.
-      '''
-      print(send("app", 'summary', 'body', 2, 1, media_file=''))  # sends notification where no notification sound is played.
-      print(send("app", 'summary', 'body', 2, 1, icon_name=''))  # system icon gets displayed.
-    ```
+       You can also set path to a image file, which can be used as a icon for notification.
+     '''
+     print(send("app", 'summary', 'body', 2, 1, media_file=''))  # sends notification where no notification sound is played.
+     print(send("app", 'summary', 'body', 2, 1, icon_name=''))  # system icon gets displayed.
+  ```
     
    So it's a very easy to use python API for displaying notification on your linux machine from your python script.
  
