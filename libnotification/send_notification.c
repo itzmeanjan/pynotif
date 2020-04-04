@@ -1,7 +1,14 @@
 #include <stdlib.h>
+#include <unistd.h>
 #include <libnotify/notify.h>
-#include "play_sound.c"
-#include "misc_func.c"
+#include "play_sound.h"
+
+/*
+    Checks existence of file path, returns 1 on success and 0 on failure.
+*/
+int does_file_exist(char *file){
+    return (access(file, F_OK)==0);
+}
 
 // libnotify and libnotify-devel needs to be installed. You need glib2 and glib2-devel too.
 // Try installing them using your os native package manager like apt or dnf or zypper.

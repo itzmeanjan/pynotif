@@ -1,10 +1,10 @@
-#include<unistd.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<vlc/vlc.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <vlc/vlc.h>
 
-// you need to have vlc, vlc-core installed on your linux machine.
-//And vlc-devel, development files i.e. header files for using vlc features from another application, needs to be installed.
+// You need to have vlc, vlc-core installed on your linux machine.
+// And vlc-devel, development files i.e. header files for using vlc features from another application, needs to be installed.
 
 int play_notification_sound(char *media_fl){ // plays a media file, denoted by a path to that file.
 	libvlc_instance_t *vlc_init=libvlc_new(0,NULL);
