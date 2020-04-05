@@ -2,7 +2,7 @@
 
 Another Python API for accessing `libnotify`, along with notification sound support _( with `vlc` backend )_.
 
-![notification](screenshots/screenshot.png)
+![notification](ss/screenshot.png)
 
 **Caution : _Well you've to go through a rigorous installation prodecure, which may not be a preferred choice always. But it's pretty assured, you'll get to learn something new._** :wink:
 
