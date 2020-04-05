@@ -23,13 +23,12 @@ setup(
     author="Anjan Roy",
     author_email="anjanroy@yandex.com",
     license="MIT",
+    requires=["Cython"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    ext_modules=[
-        cythonize(notifExtension, compiler_directives={
-                          'language_level': '3'})
-    ]
+    ext_modules=cythonize(notifExtension, compiler_directives={
+        'language_level': '3'})
 )
